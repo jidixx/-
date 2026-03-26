@@ -938,7 +938,7 @@ nav ul li a:hover {
 }
 
 /* Показываем только на экранах меньше 800px */
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     #mobile-warning {
         display: flex;
     }
