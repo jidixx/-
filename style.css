@@ -905,13 +905,32 @@ nav ul li a:hover {
     .music-icon { width: 35px; height: 35px; }
 }
 
-@media (max-width: 480px) {
-    .glass-card h2 { font-size: 15px; letter-spacing: 1px; }
-    .glass-card p { font-size: 13px; }
+@media (max-width: 768px) {
 
-    #ai-toggle-btn { font-size: 11px; padding: 8px 14px; }
+    /* AI кнопка — меньше и не мешает */
+    #ai-toggle-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 14px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
 
-    .faq-question { font-size: 0.95rem; }
-    .faq-answer { font-size: 0.85rem; }
+    /* Боковое меню — на всю ширину экрана */
+    #side-nav {
+        width: 100%;
+        right: -100%;
+        padding: 70px 20px 30px 20px;
+        overflow-y: auto; /* скролл если не влезает */
+    }
+
+    #side-nav ul li {
+        margin-bottom: 10px; /* меньше отступы между пунктами */
+    }
+
+    #side-nav ul li a {
+        font-size: 16px; /* чуть крупнее для удобства тапа */
+        padding: 8px 0;
+        display: block;
+    }
 }
-
