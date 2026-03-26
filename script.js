@@ -598,4 +598,10 @@ function resizeCanvas() {
 // Запускаем при загрузке и при повороте экрана
 window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
+function closeWarning() {
+    document.getElementById('mobile-warning').style.opacity = '0';
+    setTimeout(() => {
+        document.getElementById('mobile-warning').style.display = 'none';
+    }, 500);
+}
 
